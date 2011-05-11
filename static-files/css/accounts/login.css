@@ -1,0 +1,67 @@
+UL.login-providers {
+	list-style-type: none;
+	font-size: 1.2em;
+}
+UL.login-providers LI {
+	margin: 5px;
+}
+UL.login-providers A {
+	text-decoration: none;
+	color: #a9a9a9;
+	font-weight: bold;
+}
+UL.login-providers A:hover {
+	text-decoration: underline;
+}
+P.login-box {
+	border-bottom: 1px solid #666;
+	background-color: #aaa;
+	text-align: right;
+	padding: 25px 50px 2px;
+}
+DIV#content {
+	padding: 20px;
+}
+DL.profile {
+	overflow: hidden;
+}
+DL.profile DT {
+	float: left;
+	width: 150px;
+	font-weight: bold;
+}
+P.login-box {
+	line-height: 18px;
+	font-size: 16px;
+}
+P.login-box SPAN.auth-username {
+	font-weight: bold;
+}
+.social-icon {
+	background: url("/media/i/social/user.png") left center no-repeat;
+	padding-left: 18px;
+}
+.social-icon.openid {
+	background-image: url("/media/i/social/openid.png");
+}
+.social-icon.google {
+	background-image: url("/media/i/social/google.png");
+}
+.social-icon.yahoo {
+	background-image: url("/media/i/social/yahoo.png");
+}
+.social-icon.twitter {
+	background-image: url("/media/i/social/twitter.png");
+}
+.social-icon.wordpress {
+	background-image: url("/media/i/social/wordpress.png");
+}
+.social-icon.livejournal {
+	background-image: url("/media/i/social/livejournal.png");
+}
+.social-icon.github {
+	background-image: url("/media/i/social/github.png");
+}
+.social-icon.myopenid {
+	background-image: url("/media/i/social/myopenid.png");
+}
