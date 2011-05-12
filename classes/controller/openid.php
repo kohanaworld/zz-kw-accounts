@@ -51,7 +51,7 @@ class Controller_Openid extends Controller_Account {
 				if ( ! $user->loaded() )
 				{
 					// register user
-					$this->_create_user($user);
+					$this->_create_user($this->_auth->get_authdata());
 				}
 				$this->request->redirect(Route::get('accounts')->uri(array('action' => 'profile')));
 			}

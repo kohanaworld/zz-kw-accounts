@@ -61,7 +61,7 @@ abstract class Controller_OAuth2 extends Controller_Account {
 		if ( ! $user->loaded() )
 		{
 			// register user
-			$this->_create_user($user);
+			$this->_create_user($this->_auth->get_authdata());
 		}
 		Cookie::delete($this->_cookie);
 		//$this->request->redirect($this->request->uri(array('action' => 'info')));

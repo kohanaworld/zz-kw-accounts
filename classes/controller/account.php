@@ -6,14 +6,18 @@
  */
 class Controller_Account extends Controller_Template {
 
+	/**
+	 * @param  Model_Auth_Data $user
+	 * @return void
+	 */
 	protected function _create_user($user)
 	{
-		$new_user = Jelly::factory('user')->set('username', $user->service_id);
+		$new_user = Jelly::factory('user')
+			->set('username', $user->service_id)
+			->set('auth_data', $user);
 		$new_user->save();
 		$user->user = $new_user;
 		$user->save();
-		$new_user->auth_data = $user;
-		$new_user->save();
 		// refresh user
 		$this->_auth->get_user(TRUE);
 	}
