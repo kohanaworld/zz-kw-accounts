@@ -2,7 +2,7 @@
 
 class Controller_OAuth_Github extends Controller_OAuth2 {
 	/**
-	 * @var  OAuth_v2_Provider_Github
+	 * @var  OAuth2_Provider_Github
 	 */
 	protected $_provider;
 
