@@ -5,3 +5,4 @@
 	<li>provider: <?php echo $auth_data->service_name ?></li>
 	<li>user login: <?php echo $auth_data->service_id ?></li>
 </ul>
+<a href="/logout">Выйти</a>
