@@ -65,3 +65,6 @@ P.login-box SPAN.auth-username {
 .social-icon.myopenid {
 	background-image: url("/media/i/social/myopenid.png");
 }
+.social-icon.facebook {
+	background-image: url("/media/i/social/facebook.png");
+}
