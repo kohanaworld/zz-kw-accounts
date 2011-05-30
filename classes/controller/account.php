@@ -48,7 +48,10 @@ class Controller_Account extends Controller_Template {
 
 	public function action_profile()
 	{
-		var_dump($this->_user);
+		$this->template->content = View::factory('accounts/profile')
+			->set('user', $this->_auth->get_user())
+			->set('auth_data', $this->_auth->get_authdata());
+		//var_dump($this->_user);
 		//echo (($user = $this->_auth->get_user()) ? $user->user->username : 'guest');
 	}
 
