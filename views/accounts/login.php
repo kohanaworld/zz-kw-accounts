@@ -12,6 +12,7 @@ $links = array(
 		'google'     => 'Google',
 		'twitter'    => 'Twitter',
 		'github'     => 'Github',
+		'facebook'   => 'Facebook',
 	),
 );
 ?>
