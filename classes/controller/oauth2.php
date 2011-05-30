@@ -19,6 +19,8 @@ abstract class Controller_OAuth2 extends Controller_Account {
 	protected $_consumer;
 	protected $_cookie;
 
+	protected $_request_params = array();
+
 	public $name;
 
 	public function before()
@@ -41,7 +43,7 @@ abstract class Controller_OAuth2 extends Controller_Account {
 		$this->_consumer->callback($callback);
 
 		//$this->_provider->request_token($this->_consumer);
-		$this->request->redirect($this->_provider->authorize_url($this->_consumer));
+		$this->request->redirect($this->_provider->authorize_url($this->_consumer, $this->_request_params));
 	}
 
 	public function action_complete()
@@ -51,6 +53,9 @@ abstract class Controller_OAuth2 extends Controller_Account {
 		{
 			return;
 		}
+
+		$this->_consumer->callback($this->request->url(NULL, Request::initial()->protocol()));
+
 		$this->_token = $this->_provider->access_token($this->_consumer, $code);
 		//Cookie::set($this->_cookie, serialize($this->_token));
 		if ( FALSE == $this->_auth->login('oauth2.'.$this->name, $this->_token, TRUE))
