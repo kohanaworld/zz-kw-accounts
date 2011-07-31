@@ -68,3 +68,6 @@ P.login-box SPAN.auth-username {
 .social-icon.facebook {
 	background-image: url("/media/i/social/facebook.png");
 }
+.social-icon.vkontakte {
+	background-image: url("/media/i/social/vkontakte.png");
+}
