@@ -71,3 +71,6 @@ P.login-box SPAN.auth-username {
 .social-icon.vkontakte {
 	background-image: url("/media/i/social/vkontakte.png");
 }
+.social-icon.yandex {
+	background-image: url("/media/i/social/yandex.png");
+}
