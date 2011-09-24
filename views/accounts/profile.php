@@ -2,7 +2,7 @@
 <h2><?php echo $user->username ?></h2>
 <ul>
 	<li>email: <?php echo $auth_data->email ?></li>
-	<li>provider: <?php echo $auth_data->service_name ?></li>
-	<li>user login: <?php echo $auth_data->service_id ?></li>
+	<li>provider: <?php echo $auth_data->service_type ?></li>
+	<li>user login: <?php echo $auth_data->service_name ?></li>
 </ul>
 <a href="/logout">Выйти</a>

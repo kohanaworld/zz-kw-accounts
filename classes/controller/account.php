@@ -13,7 +13,7 @@ class Controller_Account extends Controller_Template {
 	protected function _create_user($user)
 	{
 		$new_user = Jelly::factory('user')
-			->set('username', $user->service_id)
+			->set('username', $user->service_name)
 			->set('auth_data', $user);
 		$new_user->save();
 		$user->user = $new_user;
