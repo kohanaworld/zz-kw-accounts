@@ -48,6 +48,13 @@ class Controller_Account extends Controller_Template {
 
 	public function action_profile()
 	{
+		if ( ! $this->_user )
+		{
+			// redirect to login page
+			// @TODO show warning message
+			$this->request->redirect($this->request->uri(array('action' => 'login')));
+		}
+
 		$this->template->content = View::factory('accounts/profile')
 			->set('user', $this->_auth->get_user())
 			->set('auth_data', $this->_auth->get_authdata());
