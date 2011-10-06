@@ -2,20 +2,21 @@
 $route = Route::get('accounts-auth');
 $links = array(
 	'openid'   => array(
-		'openid'     => 'OpenID',
-		'wordpress'  => 'Wordpress',
-		'yahoo'      => 'Yahoo!',
-		'myopenid'   => 'MyOpenID',
-		'google'     => 'Google',
+		'openid'      => 'OpenID',
+		'wordpress'   => 'Wordpress',
+		'yahoo'       => 'Yahoo!',
+		'myopenid'    => 'MyOpenID',
+		'google'      => 'Google',
+		'livejournal' => 'LiveJournal',
 	),
 	'oauth'    => array(
-		'google'     => 'Google',
-		'twitter'    => 'Twitter',
-		'github'     => 'Github',
-		'facebook'   => 'Facebook',
-		'linkedin'   => 'LinkedIn',
-		'vkontakte'  => 'VKontakte',
-		'yandex'     => 'Yandex',
+		'google'      => 'Google',
+		'twitter'     => 'Twitter',
+		'github'      => 'Github',
+		'facebook'    => 'Facebook',
+		'linkedin'    => 'LinkedIn',
+		'vkontakte'   => 'VKontakte',
+		'yandex'      => 'Yandex',
 	),
 );
 ?>
