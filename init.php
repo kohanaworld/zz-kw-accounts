@@ -10,4 +10,7 @@ Route::set('accounts-user', 'user/<user>(/<action>)')
 		'controller'   => 'account',
 		'action'       => 'profile',
 	));
-Route::set('accounts-auth', '<directory>/<controller>/<action>', array('directory' => '(oauth|openid)', 'action' => '(login|complete)'));
+Route::set('accounts-auth', '<directory>/<controller>(/<action>)', array('directory' => '(oauth|openid)', 'action' => '(login|complete)'))
+	->defaults(array(
+		'action'       => 'login',
+	));
