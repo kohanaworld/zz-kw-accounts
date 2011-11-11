@@ -14,6 +14,7 @@ class Controller_Account extends Controller_Template {
 	{
 		$new_user = Jelly::factory('user')
 			->set('username', $user->service_name)
+			->set('email', $user->email)
 			->set('auth_data', $user);
 		$new_user->save();
 		$user->user = $new_user;
